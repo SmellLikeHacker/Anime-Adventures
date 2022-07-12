@@ -2,21 +2,26 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "DarkTheme")
 local Tab = Window:NewTab("💞Main")
 local Section = Tab:NewSection("🌾FarmOrwinOnly")
-Section:NewToggle("🎅INFOrwinFarmWave25+", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+Section:NewToggle("🎅INFOrwinFarmWave25+(CantStop)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
     if state then
-        Autofarm = true
-    else
-        Autofarm = false
-    end
-end)
-function Autofarm ()
-getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
 getgenv().unit = "erwin"
-getgenv().hidename = true
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "namek_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    else
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
 getgenv().dif = "Hard"
 getgenv().act = "namek_infinite"
 loadstring(game:HttpGet("https://rawscripts.net/raw/RELEASE-Anime-Adventures-Lobby-3936"))()
-end
+
+    end
+end)
+
 local Section = Tab:NewSection("🎁RedeemCode")
 Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
 local args = {
@@ -236,6 +241,7 @@ Section:NewButton("HideName🤫", "ซ่อนชื่อ", function()
     game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") 
 workspace[game.Players.LocalPlayer.Name].Head["_overhead"]:Destroy()
 end)
-Section:NewKeybind("Keybind", "Keybind", Enum.KeyCode.RightControl, function()
+local Section = Tab:NewSection("📸Keybind")
+Section:NewKeybind("UiToggle", "ปุ่มเปิดปิดUi", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)

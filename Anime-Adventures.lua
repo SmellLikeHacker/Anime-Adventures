@@ -24,6 +24,13 @@ end)
 
 local Section = Tab:NewSection("🎁RedeemCode")
 Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
+    
+local args = {
+    [1] = "subtomaokuma"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
 local args = {
     [1] = "subtosnowrbx"
 }
@@ -145,6 +152,13 @@ game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_random_fight
 end
     end)
 Section:NewButton("🎇RedeemAllcode", "แค่ใส่โค้ดทั้งหมด", function()
+    local args = {
+    [1] = "subtomaokuma"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+wait (0)
+
 local args = {
     [1] = "subtosnowrbx"
 }

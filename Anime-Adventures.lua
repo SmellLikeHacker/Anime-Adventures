@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "DarkTheme")
 local Tab = Window:NewTab("🎆Kaicode")
 local Section = Tab:NewSection("🎁RedeemCode")
-Section:NewButton("🎇RedeemAllcode+AutoRandom", "🎇RedeemAllcode+AutoRandom", function()
+Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
 local args = {
     [1] = "subtosnowrbx"
 }
@@ -123,7 +123,7 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_random_fighter:InvokeServer(unpack(args))
 end
     end)
-Section:NewButton("🎇RedeemAllcode", "🎇RedeemAllcode", function()
+Section:NewButton("🎇RedeemAllcode", "แค่ใส่โค้ดทั้งหมด", function()
 local args = {
     [1] = "subtosnowrbx"
 }
@@ -213,4 +213,13 @@ local args = {
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
+end)
+local Tab = Window:NewTab("🍳Misc")
+local Section = Tab:NewSection("🍳Misc")
+Section:NewButton("HideName🤫", "ซ่อนชื่อ", function()
+    game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") 
+workspace[game.Players.LocalPlayer.Name].Head["_overhead"]:Destroy()
+end)
+Section:NewKeybind("Keybind", "Keybind", Enum.KeyCode.F, function()
+	Library:ToggleUI()
 end)

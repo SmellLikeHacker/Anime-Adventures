@@ -1,6 +1,22 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "DarkTheme")
-local Tab = Window:NewTab("🎆Kaicode")
+local Tab = Window:NewTab("💞Main")
+local Section = Tab:NewSection("🌾FarmOrwinOnly")
+Section:NewToggle("🎅INFOrwinFarmWave25+", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+    if state then
+        Autofarm = true
+    else
+        Autofarm = false
+    end
+end)
+function Autofarm ()
+getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = true
+getgenv().dif = "Hard"
+getgenv().act = "namek_infinite"
+loadstring(game:HttpGet("https://rawscripts.net/raw/RELEASE-Anime-Adventures-Lobby-3936"))()
+end
 local Section = Tab:NewSection("🎁RedeemCode")
 Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
 local args = {
@@ -220,6 +236,6 @@ Section:NewButton("HideName🤫", "ซ่อนชื่อ", function()
     game.Players.LocalPlayer.Character.Head:FindFirstChild("_overhead") 
 workspace[game.Players.LocalPlayer.Name].Head["_overhead"]:Destroy()
 end)
-Section:NewKeybind("Keybind", "Keybind", Enum.KeyCode., function()
+Section:NewKeybind("Keybind", "Keybind", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
 end)

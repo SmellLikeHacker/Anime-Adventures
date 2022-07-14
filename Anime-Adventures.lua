@@ -1,66 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "DarkTheme")
-local Tab = Window:NewTab("💞Main")
-local Section = Tab:NewSection("🌾FarmOrwinOnly")
-Section:NewToggle("🎅INFOrwinFarmWave25+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "namek_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "namek_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
-end)
-Section:NewToggle("🎅INFAOTOrwinFarmWave20+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "aot_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "aot_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
-end)
-
-Section:NewToggle("🎅INFDemonslayerOrwinFarmWave15+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "demonslayer_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "demonslayer_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
-end)
-
+local Tab = Window:NewTab("💞RedeemCode")
 
 local Section = Tab:NewSection("🎁RedeemCode")
 Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
@@ -289,6 +229,68 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
 end)
+local Tab = Window:NewTab("😴INFfarmOrwinOnly")
+local Section = Tab:NewSection("🌾FarmOrwinOnly")
+Section:NewToggle("🎅INFOrwinFarmWave25+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+    if state then
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "namek_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    else
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "namek_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    end
+end)
+Section:NewToggle("🎅INFAOTOrwinFarmWave20+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+    if state then
+       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "aot_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    else
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "aot_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    end
+end)
+
+Section:NewToggle("🎅INFDemonslayerOrwinFarmWave15+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+    if state then
+       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "demonslayer_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    else
+        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
+getgenv().unit = "erwin"
+getgenv().hidename = false
+getgenv().dif = "Hard"
+getgenv().act = "demonslayer_infinite"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
+
+    end
+end)
+
+
 local Tab = Window:NewTab("🍳Misc")
 local Section = Tab:NewSection("🍳Misc")
 Section:NewButton("HideName🤫", "ซ่อนชื่อ", function()

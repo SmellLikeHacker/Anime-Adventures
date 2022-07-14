@@ -231,7 +231,7 @@ wait (0)
 end)
 local Tab = Window:NewTab("😴INFfarmOrwinOnly")
 local Section = Tab:NewSection("🌾FarmOrwinOnly")
-Section:NewToggle("🎅INFOrwinFarmWave25+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+Section:NewToggle("🎅INF-Namek-OrwinFarmWave25+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
     if state then
         getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
 getgenv().unit = "erwin"
@@ -250,7 +250,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime
 
     end
 end)
-Section:NewToggle("🎅INFAOTOrwinFarmWave20+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+Section:NewToggle("🎅INF-AOT-OrwinFarmWave20+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
     if state then
        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
 getgenv().unit = "erwin"
@@ -270,7 +270,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime
     end
 end)
 
-Section:NewToggle("🎅INFDemonslayerOrwinFarmWave15+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
+Section:NewToggle("🎅INF-Demonslayer-OrwinFarmWave15+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
     if state then
        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
 getgenv().unit = "erwin"

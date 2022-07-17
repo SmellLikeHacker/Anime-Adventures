@@ -3,8 +3,16 @@ local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "Dark
 local Tab = Window:NewTab("💞RedeemCode")
 
 local Section = Tab:NewSection("🎁RedeemCode")
+-----------------------------------------------------------------------------------------------------------------------------------------------------ฟังชั่น1
 Section:NewButton("🎇RedeemAllcode+AutoRandom", "ใส่โค้ดทั้งหมดเเล้วก็สุ่มเองไว้ขายไอดี", function()
+		
+local args = {
+    [1] = "DATAFIX"
+}
 
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+
+		
 local args = {
     [1] = "MARINEFORD"
 }
@@ -137,7 +145,15 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.buy_random_fighter:InvokeServer(unpack(args))
 end
     end)
+-----------------------------------------------------------------------------------------------------------------------------------------------------ฟังชั่น2
 Section:NewButton("🎇RedeemAllcode", "แค่ใส่โค้ดทั้งหมด", function()
+		
+    local args = {
+    [1] = "DATAFIX"
+}
+
+game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
+
     local args = {
     [1] = "subtomaokuma"
 }

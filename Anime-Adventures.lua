@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("✨Anime Adventures By:DragonZ_TH#4793", "DarkTheme")
+local Window = Library.CreateLib("✨Anime Adventures ", "DarkTheme")
 local Tab = Window:NewTab("💞RedeemCode")
 local Section = Tab:NewSection("🎁RedeemCode")
 
@@ -380,4 +380,15 @@ end)
 local Section = Tab:NewSection("📸Keybind")
 Section:NewKeybind("UiToggle", "ปุ่มเปิดปิดUi", Enum.KeyCode.RightControl, function()
 	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("ReportBug🐛")
+local Section = Tab:NewSection("CopyDiscordServer🤳")
+Section:NewButton("DiscordInviteServer💥", "รายงานปัญหาหรือขอเพิ่มเติมได้", function()
+    setclipboard("https://discord.gg/hw6b3KAPDf")
+end)
+
+local Section = Tab:NewSection("CopyDiscordUser🤳")
+Section:NewButton("DiscordNAME💥", "รายงานปัญหาหรือขอเพิ่มเติมได้", function()
+    setclipboard("DragonZ_TH#4793")
 end)

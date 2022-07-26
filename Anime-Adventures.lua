@@ -321,67 +321,11 @@ local args = {
 game:GetService("ReplicatedStorage").endpoints.client_to_server.redeem_code:InvokeServer(unpack(args))
 wait (0)
 end)
-local Tab = Window:NewTab("😴INFfarmOrwinOnly")
-local Section = Tab:NewSection("🌾FarmOrwinOnly")
-Section:NewToggle("🎅INF-Namek-OrwinFarmWave25+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "namek_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "namek_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
+local Tab = Window:NewTab("Best AutoFarmScript😣")
+local Section = Tab:NewSection("Script🥴")
+Section:NewButton("ArponAG", " Click To execute ", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
 end)
-Section:NewToggle("🎅INF-AOT-OrwinFarmWave20+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "aot_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "aot_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
-end)
-
-Section:NewToggle("🎅INF-Demonslayer-OrwinFarmWave15+(หยุดไม่ได้)", "ใช้ Orwinเท่านั้นนะครับ", function(state)
-    if state then
-       getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "demonslayer_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    else
-        getgenv().id = "{d56a7943-5572-40c8-95dc-385bc91d7fc4}"
-getgenv().unit = "erwin"
-getgenv().hidename = false
-getgenv().dif = "Hard"
-getgenv().act = "demonslayer_infinite"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SmellLikeHacker/Anime-Adventures/main/SorryImCopying"))()
-
-    end
-end)
-
 
 local Tab = Window:NewTab("🍳Misc")
 local Section = Tab:NewSection("🍳Misc")
